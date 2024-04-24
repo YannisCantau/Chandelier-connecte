@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="./assets/Icon.png" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <title>Chandelier connecté</title>
+  </head>
+  <body>
+    <nav id="nav">
+      <ul>
+        <li><a href="#history">Notre histoire</a></li>
+        <li><a href="#contact">Nous contacter</a></li>
+      </ul>
+
+      <div class="menu-hamburger">
+        <input id="check" type="checkbox" />
+        <div class="icones">
+          <i id="menu" class="material-icons">menu</i>
+          <i id="close" style="display: none" class="material-icons">close</i>
+        </div>
+      </div>
+    </nav>
+
+    <section class="title">
+      <div class="verticalalignement">
+        <h1>Chandekier</h1>
+        <h2>connecté</h2>
+      </div>
+
+      <a name="history"></a>
+    </section>
+
+    <section class="history">
+      <div class="text">
+        <h1>Notre histoire</h1>
+        <p>
+          Notre chandelier connecté combine des aspects du temps passé et des
+          technologies modernes. Immergez-vous dans la richesse historique tout
+          en bénéficiant de l‘avancée technologique.
+        </p>
+        <a href="./more.html"><button class="btn">En savoir plus</button></a>
+      </div>
+      <img src="./assets/Equipe.jpg" alt="" />
+    </section>
+
+    <section class="gallery">
+      <h1>Gallerie de photos</h1>
+
+      <div class="carousel">
+        <ul class="carousel__list">
+          <li class="carousel__item" data-pos="-2">1</li>
+          <li class="carousel__item" data-pos="-1">2</li>
+          <li class="carousel__item" data-pos="0">3</li>
+          <li class="carousel__item" data-pos="1">4</li>
+          <li class="carousel__item" data-pos="2">5</li>
+        </ul>
+      </div>
+      <a name="contact"></a>
+    </section>
+
+    <footer>
+      <div class="thanks">
+        <h2>REMERCIEMENTS</h2>
+        <p>Yannis CANTAU</p>
+        <p>Timéo DOOM</p>
+        <p>Benoît MIRAMBEAU</p>
+        <p>Lycée professionnel privé Saint-Joseph Gabarret</p>
+      </div>
+
+      <div class="links">
+        <h2>NOUS CONTACTER</h2>
+        <div class="card">
+          <a href="#">FaceBook</a>
+        </div>
+        <div class="card">
+          <a href="#">Linkedin</a>
+        </div>
+        <div class="card">
+          <p>Mail :</p>
+          <p class="content">gsc.gabarret@orange.fr</p>
+        </div>
+        <div class="card">
+          <p>Téléphone :</p>
+          <p class="content">05 58 44 91 58</p>
+        </div>
+      </div>
+
+      <img src="./assets/logoLépine.png" alt="logo concours Lépine" />
+    </footer>
+    <p class="droits">Droit d’auteur 2024. Tous droits réservés.</p>
+    <script src="./script.js"></script>
+  </body>
+</html>
