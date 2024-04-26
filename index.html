@@ -13,6 +13,10 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
     <title>Chandelier connecté</title>
   </head>
   <body>
@@ -32,9 +36,16 @@
     </nav>
 
     <section class="title">
-      <div class="verticalalignement">
+      <div class="left">
         <h1>Chandelier</h1>
         <h2>connecté</h2>
+        <p class="introText">
+          "Illuminez vos moments avec le Chandelier connecté : Tradition,
+          modernité et émotion à portée de main."
+        </p>
+      </div>
+      <div class="right">
+        <img src="./assets/affiche.jpg" alt="" />
       </div>
 
       <a name="history"></a>
@@ -48,23 +59,48 @@
           technologies modernes. Immergez-vous dans la richesse historique tout
           en bénéficiant de l‘avancée technologique.
         </p>
-        <a href="./more.html"><button class="btn">En savoir plus</button></a>
+        <a target="_blank" href="./more.html"
+          ><button class="btn">En savoir plus</button></a
+        >
       </div>
-      <img src="./assets/Equipe.jpg" alt="" />
+      <div class="img">
+        <img src="./assets/Equipe.jpg" alt="" />
+        <figcaption>
+          De gauche à droite : Benoît MIRAMBEAU (l'inventeur), DOOM Timéo,
+          Yannis CANTAU
+        </figcaption>
+      </div>
     </section>
 
-    <section class="gallery">
+    <section class="galleryPhotos">
       <h1>Gallerie de photos</h1>
 
-      <div class="carousel">
-        <ul class="carousel__list">
-          <li class="carousel__item" data-pos="-2">1</li>
-          <li class="carousel__item" data-pos="-1">2</li>
-          <li class="carousel__item" data-pos="0">3</li>
-          <li class="carousel__item" data-pos="1">4</li>
-          <li class="carousel__item" data-pos="2">5</li>
-        </ul>
-      </div>
+      <ul class="grid">
+        <li>
+          <figure class="grid__figure">
+            <img class="imgGallery" src="./assets/IMG_0366.HEIC" alt="" />
+            <figcaption>Chandelier connecté</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure class="grid__figure">
+            <img class="imgGallery" src="./assets/IMG_3477.JPEG" alt="" />
+            <figcaption>
+              Équipe de conception de gauche à droite DOOM Timéo et Yannis
+              CANTAU
+            </figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure class="grid__figure">
+            <img class="imgGallery" src="./assets/IMG_3487.JPEG" alt="" />
+            <figcaption>
+              Électroniques du chandelier qui est normalement placé à
+              l'intérieur du tube.
+            </figcaption>
+          </figure>
+        </li>
+      </ul>
       <a name="contact"></a>
     </section>
 
@@ -72,32 +108,44 @@
       <div class="thanks">
         <h2>REMERCIEMENTS</h2>
         <p>Yannis CANTAU</p>
-        <a target="_blank" href="https://portfolio-timeo.onrender.com"
-          >Timéo DOOM</a
-        >
+        <div class="linksToPage">
+          <a target="_blank" href="https://portfolio-timeo.onrender.com"
+            >Timéo DOOM
+          </a>
+          <img src="./assets/fleche-pointant-vers-la-droite.png" alt="" />
+        </div>
         <p>Benoît MIRAMBEAU</p>
-        <a
-          target="_blank"
-          href="http://www.saintjeanboscogabarret.fr/lycee-professionnel-saint-joseph/lycee-professionnel-prive-saint-joseph.html"
-          >Lycée professionnel privé Saint-Joseph Gabarret</a
-        >
+        <div class="linksToPage">
+          <a
+            target="_blank"
+            href="http://www.saintjeanboscogabarret.fr/lycee-professionnel-saint-joseph/lycee-professionnel-prive-saint-joseph.html"
+            >Lycée professionnel privé Saint-Joseph Gabarret</a
+          >
+          <img src="./assets/fleche-pointant-vers-la-droite.png" alt="" />
+        </div>
       </div>
 
       <div class="links">
         <h2>NOUS CONTACTER</h2>
         <div class="card">
-          <a
-            target="_blank"
-            href="https://www.facebook.com/story.php?story_fbid=932595928628364&id=100056338976216&rdid=u7h4SMSdI2d7uzt9"
-            >FaceBook</a
-          >
+          <div class="linksToPage">
+            <a
+              target="_blank"
+              href="https://www.facebook.com/story.php?story_fbid=932595928628364&id=100056338976216&rdid=u7h4SMSdI2d7uzt9"
+              >FaceBook</a
+            >
+            <img src="./assets/fleche-pointant-vers-la-droite.png" alt="" />
+          </div>
         </div>
         <div class="card">
-          <a
-            target="_blank"
-            href="https://www.linkedin.com/pulse/deux-lyc%2525C3%2525A9ens-de-notre-lyc%2525C3%2525A9e-professionnel-en-route-vers-cruchon-psmme/?trackingId=Z8NLAvLdR6%2BtYLz3aHfwBQ%3D%3D"
-            >Linkedin</a
-          >
+          <div class="linksToPage">
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/pulse/deux-lyc%2525C3%2525A9ens-de-notre-lyc%2525C3%2525A9e-professionnel-en-route-vers-cruchon-psmme/?trackingId=Z8NLAvLdR6%2BtYLz3aHfwBQ%3D%3D"
+              >Linkedin</a
+            >
+            <img src="./assets/fleche-pointant-vers-la-droite.png" alt="" />
+          </div>
         </div>
         <div class="card">
           <p>Mail :</p>
@@ -109,10 +157,14 @@
         </div>
       </div>
       <a target="_blank" href="https://www.concours-lepine.com"
-        ><img src="./assets/logoLépine.jpeg" alt="logo concours Lépine"
+        ><img src="./assets/logoLépine.jpeg" alt="logo concours Lépine"
       /></a>
     </footer>
     <p class="droits">Droit d’auteur 2024. Tous droits réservés.</p>
+    <button id="scrollToTopBtn">
+      <img src="./assets/chevron-vers-le-haut.png" alt="" />
+    </button>
+
     <script src="./script.js"></script>
   </body>
 </html>
