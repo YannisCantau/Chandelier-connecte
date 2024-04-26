@@ -47,46 +47,27 @@ links.forEach((link) => {
   });
 });
 
-const state = {};
-const carouselList = document.querySelector(".carousel__list");
-const carouselItems = document.querySelectorAll(".carousel__item");
-const elems = Array.from(carouselItems);
-
-carouselList.addEventListener("click", function (event) {
-  var newActive = event.target;
-  var isItem = newActive.closest(".carousel__item");
-
-  if (!isItem || newActive.classList.contains("carousel__item_active")) {
-    return;
-  }
-
-  update(newActive);
-});
-
-const update = function (newActive) {
-  const newActivePos = newActive.dataset.pos;
-
-  const current = elems.find((elem) => elem.dataset.pos == 0);
-  const prev = elems.find((elem) => elem.dataset.pos == -1);
-  const next = elems.find((elem) => elem.dataset.pos == 1);
-  const first = elems.find((elem) => elem.dataset.pos == -2);
-  const last = elems.find((elem) => elem.dataset.pos == 2);
-
-  current.classList.remove("carousel__item_active");
-
-  [current, prev, next, first, last].forEach((item) => {
-    var itemPos = item.dataset.pos;
-
-    item.dataset.pos = getPos(itemPos, newActivePos);
-  });
+// Au chargement de la page
+window.onload = function () {
+  // Détecter le défilement de la page
+  window.onscroll = function () {
+    scrollFunction();
+  };
 };
 
-const getPos = function (current, active) {
-  const diff = current - active;
+function scrollFunction() {
+  var scrollToTopBtn = document.getElementById("scrollToTopBtn");
 
-  if (Math.abs(current - active) > 2) {
-    return -current;
+  // Afficher ou masquer le bouton en fonction du défilement de la page
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    scrollToTopBtn.style.display = "block";
+  } else {
+    scrollToTopBtn.style.display = "none";
   }
+}
 
-  return diff;
+// Fonction pour remonter en haut de la page lorsqu'on clique sur le bouton
+document.getElementById("scrollToTopBtn").onclick = function () {
+  document.body.scrollTop = 0; // Pour les navigateurs web
+  document.documentElement.scrollTop = 0; // Pour IE, Firefox, Chrome, etc.
 };
