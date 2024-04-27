@@ -26,7 +26,7 @@ body {
 #scrollToTopBtn {
   display: none;
   position: fixed;
-  bottom: 20px;
+  bottom: 60px;
   right: 20px;
   z-index: 99;
   font-size: 16px;
@@ -241,6 +241,7 @@ nav ul li a:hover {
   font-size: 18px;
   margin-top: 20px;
   color: black;
+  cursor: pointer;
 }
 .history .text .btn:hover {
   background-color: #780000;
@@ -292,7 +293,7 @@ nav ul li a:hover {
   -webkit-overflow-scrolling: touch;
   padding: 2em 1em;
   background: white;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 @media all and (min-width: 600px) {
   .galleryPhotos .grid {
@@ -472,6 +473,58 @@ footer img {
   }
   footer img {
     width: 20%;
+  }
+}
+.card-container {
+  padding: 5% 8% 5%;
+}
+.card-container h1 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 45px;
+  font-weight: lighter;
+  margin-bottom: 40px;
+}
+.card-container a {
+  text-decoration: none;
+  color: black;
+  margin: 20px 0px;
+}
+.card-container a .links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #d9d9d9;
+  padding: 20px 0px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.card-container a .links .leftContact {
+  width: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card-container a .links .leftContact p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 23px;
+}
+.card-container a .links .material-symbols-outlined {
+  font-size: 30px;
+  font-weight: bold;
+  opacity: 0;
+}
+.card-container a .links:hover .material-symbols-outlined {
+  animation: fillAnimation 1s forwards;
+}
+
+@keyframes fillAnimation {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
   }
 }
 
