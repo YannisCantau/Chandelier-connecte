@@ -573,7 +573,8 @@ footer img {
   color: #666;
   font-size: 15px;
   font-family: "Montserrat", sans-serif;
-  height: 67px;
+  height: 97px;
+  margin-bottom: 35px;
 }
 .follow .card-button {
   display: block;
