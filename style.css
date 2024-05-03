@@ -327,18 +327,22 @@ footer {
   padding: 4% 1%;
   color: #acb2b8;
 }
+
 footer .linksToPage {
   display: flex;
   align-items: center;
   margin-bottom: 5px;
 }
+
 footer .linksToPage img {
   width: 22px;
   margin-left: 5px;
 }
+
 footer .linksToPage:hover img {
   animation: slide 1s infinite;
 }
+
 @keyframes slide {
   0% {
     transform: translateX(0px);
@@ -353,6 +357,7 @@ footer .linksToPage:hover img {
 footer .thanks {
   width: 33%;
 }
+
 footer .thanks h2 {
   font-family: Arial, Helvetica, sans-serif;
   font-family: "Bebas Neue", sans-serif;
@@ -360,12 +365,14 @@ footer .thanks h2 {
   font-weight: lighter;
   margin-bottom: 40px;
 }
+
 footer .thanks p {
   font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
   margin-bottom: 5px;
   margin-left: 15px;
 }
+
 footer .thanks a {
   text-decoration: none;
   font-size: 20px;
@@ -373,9 +380,11 @@ footer .thanks a {
   color: #5e9bff;
   margin-left: 15px;
 }
+
 footer .links {
   width: 33%;
 }
+
 footer .links h2 {
   font-family: Arial, Helvetica, sans-serif;
   font-family: "Bebas Neue", sans-serif;
@@ -383,25 +392,30 @@ footer .links h2 {
   font-weight: lighter;
   margin-bottom: 40px;
 }
+
 footer .links .card {
   margin-left: 25px;
   margin-bottom: 10px;
   height: 25px;
   display: flex;
 }
+
 footer .links .card a {
   text-decoration: none;
   font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
   color: #5e9bff;
 }
+
 footer .links .card p {
   font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 footer .links .card .content {
   margin-left: 5px;
 }
+
 footer img {
   width: 50%;
 }
@@ -575,6 +589,12 @@ footer img {
   font-family: "Montserrat", sans-serif;
   height: 97px;
   margin-bottom: 35px;
+}
+.follow .date {
+  margin-left: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: gray;
+  margin-bottom: 5px;
 }
 .follow .card-button {
   display: block;
