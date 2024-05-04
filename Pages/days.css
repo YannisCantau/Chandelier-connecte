@@ -1,5 +1,6 @@
 /* Import des polices de caractères */
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
 
 /* day 0 */
 
@@ -15,10 +16,11 @@ h1 {
 }
 
 h2 {
-  font-family: "Bebas Neue", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 35px;
   font-weight: lighter;
   margin-bottom: 40px;
+  margin-top: 50px;
 }
 
 img {
@@ -29,4 +31,11 @@ img {
 p {
   font-size: 18px;
   font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: #5e9bff;
 }
